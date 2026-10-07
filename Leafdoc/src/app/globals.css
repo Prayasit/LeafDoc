@@ -1,0 +1,106 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Squarespace-inspired Light Theme for LeafDoc */
+    --background: 0 0% 100%; /* White */
+    --foreground: 224 71.4% 4.1%; /* Dark Blue/Almost Black for text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+
+    --primary: 142 76% 36%; /* Leaf Green - Core accent */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+
+    --secondary: 220 13% 91%; /* Light Gray for secondary elements */
+    --secondary-foreground: 224 71.4% 4.1%;
+
+    --muted: 220 14.3% 95.9%; /* Lighter gray for muted backgrounds */
+    --muted-foreground: 220 8.9% 43.1%; /* Muted text color */
+
+    --accent: 136 60% 48%; /* A slightly brighter, vibrant green for accents/hovers */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 85%; /* Subtle light gray border */
+    --input: 220 13% 88%;
+    --ring: 142 76% 40%; /* Ring color related to primary green */
+
+    --radius: 0.5rem; /* Consistent rounded corners */
+
+    /* Chart colors (can be adjusted as needed) */
+    --chart-1: 142 70% 50%;
+    --chart-2: 160 65% 45%;
+    --chart-3: 130 70% 55%;
+    --chart-4: 150 75% 40%;
+    --chart-5: 145 60% 60%;
+
+     /* Sidebar styles (less emphasis for now as it's not the primary focus of this redesign) */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 224 71.4% 4.1%;
+    --sidebar-primary: 142 76% 36%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14.3% 95.9%;
+    --sidebar-accent-foreground: 224 71.4% 4.1%;
+    --sidebar-border: 220 13% 85%;
+    --sidebar-ring: 142 76% 40%;
+  }
+
+  .dark {
+    /* Dark Theme (Optional, can be refined later if needed) */
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 142 71% 45%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 136 65% 55%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 142 71% 45%;
+
+    --chart-1: 142 70% 50%;
+    --chart-2: 160 65% 45%;
+    --chart-3: 130 70% 55%;
+    --chart-4: 150 75% 40%;
+    --chart-5: 145 60% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  html {
+    /* Default to light theme */
+    /* @apply dark; */ /* Uncomment to default to dark theme */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+  h1 { @apply text-4xl md:text-5xl lg:text-6xl; }
+  h2 { @apply text-3xl md:text-4xl; }
+  h3 { @apply text-2xl md:text-3xl; }
+  p { @apply leading-relaxed text-foreground/80; }
+}

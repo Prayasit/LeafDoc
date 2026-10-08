@@ -211,10 +211,10 @@ LeafDoc/
 | [MP Synopsis](Documentation/MP%20Synopsis.pdf) | Major project synopsis |
 | [Project Presentation](Documentation/LeafDoc-A-Generative-AI-Based-Plant-Identification-and-Disease-Diagnosis-System.pptx) | Project presentation |
 
-## Author
+## Authors
 
-**Prayas Gotefode**
-MCA Student | Data Analytics and Software Development
+- **Prayas Gotefode**, MCA Student
+- **Shiwani Amrute**, MCA Student
 
 - GitHub: [@Prayasit](https://github.com/Prayasit)
 - LinkedIn: [Prayas Gotefode](https://www.linkedin.com/)

@@ -216,9 +216,6 @@ LeafDoc/
 - **Prayas Gotefode**, MCA Student
 - **Shiwani Amrute**, MCA Student
 
-- GitHub: [@Prayasit](https://github.com/Prayasit)
-- LinkedIn: [Prayas Gotefode](https://www.linkedin.com/)
-
 ## License
 
 Developed as an academic major project. The source code and documentation are provided for educational and portfolio purposes.
